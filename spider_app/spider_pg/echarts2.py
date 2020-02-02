@@ -3,7 +3,7 @@
 from pyecharts.charts import Pie
 from pyecharts import options as opts
 from django.db.models import Count
-from spider_app.models import Test
+from spider_app.models import Douban
 
 
 def mkhtml2(name1):
@@ -13,7 +13,7 @@ def mkhtml2(name1):
     """
 
     # ORM查询
-    myresult = Test.objects.values('address').annotate(count=Count('name')).order_by('-count')[:10]
+    myresult = Douban.objects.values('address').annotate(count=Count('name')).order_by('-count')[:10]
     # fetchall() 获取所有记录
     namelist = []
     # 将变量存在列表里

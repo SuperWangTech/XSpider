@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import view, testdb
+
+from spider_app import views
+from . import view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/', view.hello),
-    url(r'^name/', view.name),
-    url(r'^age/', view.age),
-    url(r'^testdb/', testdb.testdb),
-
+    url(r'^spider/', views.spider),
+    url(r'^add/', views.add),
+    url(r'^delete/',  views.delete),
+    url(r'^change/',  views.change),
+    url(r'^select/',  views.select)
 ]

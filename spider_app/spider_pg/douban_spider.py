@@ -3,7 +3,7 @@
 
 import requests
 from lxml import etree
-from spider_app.models import Test
+from spider_app.models import Douban
 from spider_app.spider_pg.factory import Factory
 
 
@@ -64,7 +64,7 @@ class DoubanSpider(Factory):
     def save_data(self):
 
         """保存数据"""
-        test1 = Test(
+        test1 = Douban(
             rank=self.rank,
             name=self.name,
             star=self.star,

@@ -1,7 +1,7 @@
 # *_*coding:utf-8 *_*
 # __author__ = 'GonzaloWang'
 from django.db.models import Count
-from spider_app.models import Test
+from spider_app.models import Douban
 
 
 def outputcmd():
@@ -9,7 +9,7 @@ def outputcmd():
     输出到命令行统计信息
     :return: 命令行统计信息
     """
-    myresult = Test.objects.values('address').annotate(count=Count('name')).order_by('-count')[:10]
+    myresult = Douban.objects.values('address').annotate(count=Count('name')).order_by('-count')[:10]
     namelist = []
     numlist = []
     for name in myresult:

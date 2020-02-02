@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库内容展示及增删改查</title>
+</head>
+<body>
+    </select>
+    <label for="name">请输入名字:</label>
+    <input type="text" name="name" style="width: 105px"><br><br>
+    <input type="reset">
+    <input type="submit">
+     <h1>电影列表：</h1>
+    {% for i in content %}
+    <h1>{{ i }}</h1>
+    {% endfor %}
+</body>
+</html>

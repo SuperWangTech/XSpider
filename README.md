@@ -1,4 +1,4 @@
-# Welcome to XSpider
+# Welcome to my project
 ## 1.Project Description
    Django embeds a "spider" script, grabs Douban top250 movie information, saves it to a mysql database, and displays data analysis on the command line or web page.
 ## 2.How to use?
@@ -17,10 +17,3 @@ To create a virtual environment, enter:
 pipenv shell
 ```
 To open the virtual environment.
-
-## Update
-
-ready
-123
-ready
-1232313123123898997987

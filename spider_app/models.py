@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Test(models.Model):
+class Douban(models.Model):
     rank = models.CharField("排名", max_length=20)
     name = models.CharField("电影名称", max_length=200)
     star = models.CharField("星级评分", max_length=200)
