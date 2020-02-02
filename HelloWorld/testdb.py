@@ -5,18 +5,7 @@ from django.http import HttpResponse
 from spider_app.models import Test
 
 
-def testdb(request):
-    test1 = Test(
-        rank="1",
-        name="肖申克的救赎",
-        star="9.7",
-        num="1783755人评价",
-        text="希望让人自由。",
-        date="1994",
-        address="美国",
-    )
-    test1.save()
-    return HttpResponse("<p>数据添加成功！</p>")
+
 
 
 def testdb2(request):
