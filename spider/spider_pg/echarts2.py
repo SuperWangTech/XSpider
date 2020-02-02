@@ -3,7 +3,7 @@
 from pyecharts.charts import Pie
 from pyecharts import options as opts
 from django.db.models import Count
-from spider_app.models import Douban
+from spider.models import Douban
 
 
 def mkhtml2(name1):

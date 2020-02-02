@@ -1,7 +1,7 @@
 # *_*coding:utf-8 *_*
 # __author__ = 'GonzaloWang'
 from django.db.models import Count
-from spider_app.models import Douban
+from spider.models import Douban
 
 
 def outputcmd():

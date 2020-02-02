@@ -3,8 +3,8 @@
 
 import requests
 from lxml import etree
-from spider_app.models import Douban
-from spider_app.spider_pg.factory import Factory
+from spider.models import Douban
+from spider.spider_pg.factory import Factory
 
 
 class DoubanSpider(Factory):

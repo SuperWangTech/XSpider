@@ -2,7 +2,7 @@
 # __author__ = 'GonzaloWang'
 from django.core.management.base import BaseCommand
 
-from spider_app.spider_pg import main
+from spider.spider_pg import main
 
 
 class Command(BaseCommand):

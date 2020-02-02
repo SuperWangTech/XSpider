@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from spider_app import views
+from spider import views
 from . import view
 
 urlpatterns = [

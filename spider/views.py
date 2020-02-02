@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 from django.views.decorators.csrf import csrf_protect
 
-from spider_app.models import Douban
+from spider.models import Douban
 
 
 def spider(request):

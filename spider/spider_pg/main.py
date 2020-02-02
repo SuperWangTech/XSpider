@@ -2,9 +2,9 @@
 # __author__ = 'GonzaloWang'
 import re
 import time
-from spider_app.spider_pg import echarts2
-from spider_app.spider_pg.douban_spider import DoubanSpider
-from spider_app.spider_pg.test import outputcmd
+from spider.spider_pg import echarts2
+from spider.spider_pg.douban_spider import DoubanSpider
+from spider.spider_pg.test import outputcmd
 
 
 def main1():
